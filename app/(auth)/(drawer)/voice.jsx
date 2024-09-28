@@ -1,0 +1,16 @@
+import { View, Text, SafeAreaView, Button } from 'react-native'
+import React from 'react'
+import MessageInput from '../../../components/MessageInput'
+
+const voice = () => {
+  return (
+    <SafeAreaView className="h-full w-full" >
+      <View className="h-full w-full">
+        <Button title="Sign out" onPress={() => signOut()} />
+        <MessageInput />
+      </View>
+  </SafeAreaView>
+  )
+}
+
+export default voice

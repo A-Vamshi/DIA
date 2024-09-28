@@ -5,7 +5,6 @@ import * as SecureStore from "expo-secure-store";
 import { useFonts } from "expo-font";
 import { useEffect } from "react";
 import { ActivityIndicator, View } from "react-native";
-import { StatusBar } from "expo-status-bar";
 
 
 const CLERK_KEY = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY as string;
@@ -65,7 +64,6 @@ const InitialLayout = () => {
 
   return (
     <Stack>
-      <Stack.Screen name="(tabs)" options={{headerShown: false}}/>
       <Stack.Screen name="index" options={{headerShown: false}}/>
       <Stack.Screen name="login" options={{
         presentation: "transparentModal",

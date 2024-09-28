@@ -48,3 +48,15 @@ Join our community of developers creating universal apps.
 
 - [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
 - [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+
+
+npm scripts to download:
+@clerk/clerk-expo
+nativewind 
+expo-blur 
+@react-navigation/drawer  
+@clerk/clerk-expo
+expo-secure-store
+
+
+npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
