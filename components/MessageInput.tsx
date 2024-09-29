@@ -13,7 +13,7 @@ const MessageInput = () => {
   const [value, setValue] = useState("");
 
   return (
-    <BlurView intensity={90} style={{bottom: 0, paddingTop: 0}} tint="extraLight" className="w-full absolute">
+    <BlurView intensity={90} style={{bottom: 0, paddingTop: 0}} tint="extraLight" className="w-full">
       <View className='m-2 rounded-2xl flex-row justify-center items-center'>
         <TextInput
           autoFocus

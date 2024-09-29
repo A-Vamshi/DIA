@@ -16,5 +16,5 @@
     "app2/login.jsx", 
     "clerk.js", 
     "components/AssistantInput.jsx"
-  ]
+, "components/MessageIdeas.jsx"  ]
 }
