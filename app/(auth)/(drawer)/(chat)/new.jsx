@@ -3,27 +3,68 @@ import React, { useState } from 'react';
 import { useAuth } from "@clerk/clerk-expo";
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Header from '../../../../components/Header';
-import { Stack } from 'expo-router';
+import { Redirect, Stack } from 'expo-router';
 import MessageInput from "../../../../components/MessageInput";
 import MessageIdeas from "../../../../components/MessageIdeas";
 import ChatMessage from '../../../../components/ChatMessage';
 
-
 const New = () => {
      const { signOut } = useAuth();
-     const [messages, setMessages] = useState("");
+     const [messages, setMessages] = useState("asdfghjkl");
+     const [key, setKey] = useState("");
+    //  if (!key || key == "") {
+    //   return <Redirect href={'/(auth)/(modal)/settings'} />
+    //  }
      const dummyMessages = [
       {
         id: 1,
         content: "Hello, how can I help you today?",
-        role: "user",
-        imageUrl: "https://img.freepik.com/premium-vector/ai-logo-template-vector-with-white-background_1023984-15069.jpg?w=1380",
+        role: "bot",
         prompt: "GPT-3",
       },
       {
         id: 2,
-        content: "I need help with react native",
+        content: "I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native ",
+        role: "user",
+        imageUrl: "https://i.pinimg.com/originals/c9/a3/df/c9a3df52577d1cee60fbc22c681d6f86.jpg",
+        prompt: "GPT-3",
+      },
+      {
+        id: 3,
+        content: "Hello, how can I help you today?",
         role: "bot",
+        prompt: "GPT-3",
+      },
+      {
+        id: 4,
+        content: "I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native ",
+        role: "user",
+        imageUrl: "https://i.pinimg.com/originals/c9/a3/df/c9a3df52577d1cee60fbc22c681d6f86.jpg",
+        prompt: "GPT-3",
+      },
+      {
+        id: 5,
+        content: "Hello, how can I help you today?",
+        role: "bot",
+        prompt: "GPT-3",
+      },
+      {
+        id: 6,
+        content: "I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native ",
+        role: "user",
+        imageUrl: "https://i.pinimg.com/originals/c9/a3/df/c9a3df52577d1cee60fbc22c681d6f86.jpg",
+        prompt: "GPT-3",
+      },
+      {
+        id: 7,
+        content: "Hello, how can I help you today?",
+        role: "bot",
+        prompt: "GPT-3",
+      },
+      {
+        id: 8,
+        content: "I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native I need help with react native ",
+        role: "user",
         imageUrl: "https://i.pinimg.com/originals/c9/a3/df/c9a3df52577d1cee60fbc22c681d6f86.jpg",
         prompt: "GPT-3",
       }
@@ -37,7 +78,12 @@ const New = () => {
             renderItem={(item) => (
               <ChatMessage item={item.item} />
             )}
-            keyExtractor={item => item.id}
+            showsVerticalScrollIndicator={false}
+            contentContainerStyle={{
+              paddingBottom: 50,
+              marginTop: 0,
+            }}
+            keyboardDismissMode='on-drag'
           />
         <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : "height"} 
           style={{

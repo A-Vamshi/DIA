@@ -7,6 +7,11 @@ const Layout = () => {
       <Stack.Screen name="(drawer)" options={{
         headerShown: false,
       }}/>
+      <Stack.Screen name="(modal)/settings" options={{
+          headerTitle: "Settings",
+          presentation: "modal",
+          headerShadowVisible: false,
+      }}/>
     </Stack>
   )
 }

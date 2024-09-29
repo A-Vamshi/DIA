@@ -46,12 +46,6 @@ const Login = () => {
       setLoading(false);
     }
   }
-  const SignUp = () => {
-
-  }
-  const SignIn = () => {
-    
-  }
   return (
     <BlurView intensity={90} tint="dark" className='h-full'>
       <KeyboardAvoidingView 

@@ -19,11 +19,6 @@ const Signs = () => {
       >
         <Ionicons name="mail" size={14} color={"#FFF"}> <Text className='text-base text-white'> Continue with email</Text> </Ionicons> 
       </TouchableOpacity>
-      <TouchableOpacity className='h-[50px] min-w-full bg-black border-outline border-2 justify-center items-center rounded-xl p-1 m-1'
-        onPress={() => router.push("/chat")}
-      >
-        <Ionicons name="home" size={14} color={"#FFF"}> <Text className='text-base text-white'> Home </Text> </Ionicons> 
-      </TouchableOpacity>
     </View>
   )
 }
