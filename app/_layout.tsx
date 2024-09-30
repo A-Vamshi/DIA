@@ -9,6 +9,8 @@ import { StatusBar } from "expo-status-bar";
 
 
 const CLERK_KEY = process.env.EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY as string;
+const OPEN_API_KEY = process.env.OPENAI_API_KEY as string
+
 
 const tokenCache = {
   async getToken(key: string) {

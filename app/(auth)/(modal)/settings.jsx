@@ -2,6 +2,9 @@ import { View, Text, TextInput, SafeAreaView } from 'react-native'
 import React, { useState } from 'react'
 import { TouchableOpacity } from 'react-native'
 import { useAuth } from '@clerk/clerk-expo'
+import OpenAI from 'react-native-openai'
+
+
 
 const settings = ({set}) => {
   const [form, setForm] = useState({
@@ -9,7 +12,7 @@ const settings = ({set}) => {
     org: "",
   })
   const handle = () => {
-    console.log(form)
+    
   }
   const { signOut } = useAuth();
   return (

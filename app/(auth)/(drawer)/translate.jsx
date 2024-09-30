@@ -6,7 +6,6 @@ const translate = () => {
   return (
     <SafeAreaView className="h-full w-full" >
       <View className="h-full w-full">
-        <Button title="Sign out" onPress={() => signOut()} />
         <MessageInput />
       </View>
   </SafeAreaView>
