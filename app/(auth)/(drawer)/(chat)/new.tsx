@@ -123,7 +123,6 @@ const New = () => {
               paddingBottom: 50,
               marginTop: 0,
             }}
-            keyboardDismissMode='on-drag'
           />
         <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : "height"} 
           style={{
