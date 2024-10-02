@@ -1,62 +1,58 @@
-# Welcome to your Expo app 👋
+# DIA
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-## Get started
+<img src="/assets/images/introPage.jpeg" alt="drawing" width="200"/> <img src="/assets/images/newChat.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/chat.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/settings.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/sidebar.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/translation.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/voice.jpeg" alt="drawing" width="200"/>
+<img src="/assets/images/image.jpeg" alt="drawing" width="200"/>
 
-1. Install dependencies
+DIA is a multi-functional AI-powered mobile app that integrates various artificial intelligence features such as chat, image generation, speech recognition, and live voice translation. This app leverages modern frameworks like **React Native**, **Expo**, **Clerk**, and **Nativewind** to deliver a seamless cross-platform experience.
 
-   ```bash
-   npm install
-   ```
+## Features
 
-2. Start the app
+- **AI Chat**: Engage in conversations with an AI-powered chatbot.
+- **Image Generation**: Create AI-generated images from text prompts.
+- **Speech Recognition**: Convert spoken words into text with high accuracy.
+- **Live Voice Translation**: Real-time translation of voice from one language to another.
 
-   ```bash
-    npx expo start
-   ```
+## Tech Stack
 
-In the output, you'll find options to open the app in a
+- **Frontend**: React Native, styled with Nativewind for utility-first CSS.
+- **Backend & Auth**: Clerk for user authentication and management.
+- **App Development**: Expo to streamline the build and development process.
+- **AI Features**: Integrated AI models for chat, image generation, speech recognition, and translation.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Installation
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Follow the instructions below to get the project running locally.
 
-## Get a fresh project
+### Prerequisites
 
-When you're ready, run:
+- **Node.js** (>=14.0.0)
+- **Expo CLI**
+- **Clerk API keys** (for user authentication)
+- **Android Studio/Xcode** for emulators or real device builds
+
+### Clone the Repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/yourusername/DIA.git
+cd DIA
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Install dependencies
+```bash
+npm install
+```
 
-## Learn more
+Run the application 
+```bash
+npx expo start -c
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+#### License
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
-
-
-npm scripts to download:
-@clerk/clerk-expo
-nativewind 
-expo-blur 
-@react-navigation/drawer  
-@clerk/clerk-expo
-expo-secure-store
-
-
-npx expo install expo-router react-native-safe-area-context react-native-screens expo-linking expo-constants expo-status-bar
+This project is licensed under the MIT License - see the LICENSE file for details.
