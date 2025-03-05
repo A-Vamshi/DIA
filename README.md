@@ -39,7 +39,7 @@ Follow the instructions below to get the project running locally.
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/DIA.git
+git clone https://github.com/A-Vamshi/DIA.git
 cd DIA
 ```
 
