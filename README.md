@@ -56,3 +56,7 @@ npx expo start -c
 #### License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Contact
+
+For inquiries or collaboration, reach out at **vamshi.edustudy@gmail.com**.
